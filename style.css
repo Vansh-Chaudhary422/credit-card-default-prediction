@@ -1,0 +1,238 @@
+
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Space between the four sections */
+.form-card {
+    margin-bottom: 25px;
+}
+
+/* Section description */
+.section-description {
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: -12px 0 24px;
+}
+
+/* Result heading */
+.result-box h2 {
+    margin-bottom: 12px;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #0b1120, #172554, #312e81);
+    color: #f8fafc;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* ===== Main Container ===== */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.header h1 {
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 800;
+    margin-bottom: 12px;
+    background: linear-gradient(90deg, #60a5fa, #c084fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.header p {
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ===== Form Card ===== */
+.form-card {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(14px);
+}
+
+.form-card h2 {
+    font-size: 23px;
+    margin-bottom: 25px;
+    color: #e0e7ff;
+}
+
+/* ===== Input Grid ===== */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+/* ===== Inputs and Dropdowns ===== */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    outline: none;
+    background: #111c35;
+    color: #f8fafc;
+    font-size: 15px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #94a3b8;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #818cf8;
+    box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.2);
+}
+
+/* ===== Submit Button ===== */
+.submit-btn {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.35);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* ===== Prediction Result ===== */
+.result-box {
+    margin-top: 25px;
+    padding: 22px;
+    border-radius: 14px;
+    text-align: center;
+    background: rgba(96, 165, 250, 0.12);
+    border: 1px solid #60a5fa;
+}
+
+.result-box h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    color: #93c5fd;
+}
+
+.result-box p {
+    color: #e2e8f0;
+    line-height: 1.7;
+}
+
+/* ===== Footer ===== */
+.footer {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 12px;
+    }
+
+    .form-card {
+        padding: 20px 16px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .header h1 {
+        font-size: 29px;
+    }
+}
+
+
+/* Responsive design for all screen sizes */
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+input,
+select,
+button {
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-card {
+        padding: 18px 14px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+}
+
